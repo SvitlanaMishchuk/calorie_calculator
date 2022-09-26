@@ -5,7 +5,12 @@ module.exports = {
     fontFamily: {
       souv: ['Souvenir', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#386641',
+        secondary: '#bc4749',
+      },
+    },
   },
   plugins: [],
-}
+};
