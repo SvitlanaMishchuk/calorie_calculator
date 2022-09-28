@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     fontFamily: {
       souv: ['Souvenir', 'sans-serif'],
+      serif: ['serif']
     },
     extend: {
       colors: {
         primary: '#386641',
         secondary: '#bc4749',
+        theme: '#f2e8cf'
       },
     },
   },
