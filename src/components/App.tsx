@@ -6,9 +6,11 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div className="container mx-auto max-w-5xl mt-10 grid grid-cols-3">
-        <Aside/>
-        <Calculator />
+      <div className="bg-theme h-max min-h-screen py-10">
+        <div className="container mx-auto max-w-5xl grid grid-cols-3">
+          <Aside />
+          <Calculator />
+        </div>
       </div>
     </>
   );
