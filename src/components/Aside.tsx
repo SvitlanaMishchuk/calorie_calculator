@@ -1,10 +1,19 @@
-import { AsideMenuItem } from "./AsideMenuItem"
+import { useState } from 'react';
+import { AsideMenuItem } from './AsideMenuItem';
+import { FormulaMenu } from '../models/FormulaMenu';
+
+import formulas from '../api/formulas.json';
 
 export const Aside = () => {
-    return <aside className="col-span-1">
-        <ul>
-            <AsideMenuItem label={'Mifflin St. Jeor Formula'} options={[{id: '1', label: 'Simplified Version' }, {id: '2', label: 'Full Version' }]}/>
-            <AsideMenuItem label={'Harris-Benedict Formula'}/>
-        </ul>
+  const [formulasMenu, setFormulasMenu] = useState<Array<FormulaMenu>>(formulas);
+
+  return (
+    <aside className="col-span-1">
+      <ul>
+        {formulasMenu.map(({ id, label, options }) => (
+          <AsideMenuItem label={label} options={options} key={id} />
+        ))}
+      </ul>
     </aside>
-}
+  );
+};

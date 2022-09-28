@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "label": "Mifflin St. Jeor Formula",
+        "options": [
+            {
+                "id": "1", 
+                "label": "Simplified Version" 
+            }, 
+            {
+                "id": "2", 
+                "label": "Full Version" 
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "label": "Harris-Benedict Formula"
+    }
+]
